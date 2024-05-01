@@ -1,6 +1,6 @@
 source $ZSH_CUSTOM/_env.zsh
 alias zshrc="source $HOME/.zshrc"
-alias boardctl="sudo $TEGRA/tools/board_automation/boardctl -t topo"
+alias boardctl="sudo $L4T/tools/board_automation/boardctl -t topo"
 alias tmux-resume="tmux attach-session -t \$(tmux list-sessions | head -1 | grep -Po '^.+?(?=:)')"
 alias ssh-nocheck="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 alias scp-nocheck="scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"

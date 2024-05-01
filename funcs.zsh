@@ -12,7 +12,7 @@ function ssh-agx () {
 
 function flash-agx-nvme () {
 	boardctl recovery
-	cd $TEGRA
+	cd $L4T
 	sudo ./tools/kernel_flash/l4t_initrd_flash.sh \
 		--external-device nvme0n1p1 \
 		-c tools/kernel_flash/flash_l4t_external.xml \
